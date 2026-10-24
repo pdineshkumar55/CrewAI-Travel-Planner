@@ -1,0 +1,8 @@
+services:
+  travel-planner:
+    build: .
+    image: travel-planner
+    env_file: .env
+    # The script asks for a city with input(), so keep stdin open.
+    stdin_open: true
+    tty: true
